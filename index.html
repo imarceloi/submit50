@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <h1 class="title">TODO App</h1>
+          <div class="flow-right controls"></div>
+          <table class="table is-fullwidth is-bordered is-striped">
+            <thead>
+              <tr>
+                <th><abbr title="Item">Item</abbr></th>
+                <th class="has-text-centered">
+                  <abbr title="Action">Action</abbr>
+                </th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td>
+                  <span>Item count: <span id="item-count">0</span></span>
+                </td>
+                <td class="has-text-centered">
+                  <span>
+                    Unchecked count: <span id="unchecked-count">0</span>
+                  </span>
+                </td>
+              </tr>
+            </tfoot>
+            <tbody id="todo-list" class="todo-list">
+              <tr id="no-items">
+                <td colspan="2" class="has-text-centered">
+                  <span>Click on New TODO button.</span>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+          <button class="button is-primary is-fullwidth" onClick="newTodo()">
+            New TODO
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </body>
+</html>
